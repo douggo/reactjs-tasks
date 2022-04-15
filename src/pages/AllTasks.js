@@ -9,7 +9,7 @@ function AllTasks(props) {
     () => {
       setIsLoading(true);
       fetch(
-        'https://douglas-636d9.firebaseio.com/tasks.json'
+        'link_to_firebase_realtime_database'
       ).then(
         response => {
           return response.json()
