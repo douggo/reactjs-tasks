@@ -1,7 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import AllTasks from './pages/AllTasks';
-import NewTask from './pages/NewTask';
+
+import AllMeetUpsPage from './pages/AllMeetUps';
+import NewMeetUpPage from './pages/NewMeetup';
+import FavoritesPage from './pages/Favorites';
+
 import Layout from './components/layout/Layout';
 
 function App() {
@@ -10,10 +13,13 @@ function App() {
       <Layout>
         <Switch>
           <Route path='/' exact>
-            <AllTasks/>
+            <AllMeetUpsPage />
           </Route>
           <Route path='/new'>
-            <NewTask/>
+            <NewMeetUpPage />
+          </Route>
+          <Route path='/favorites'>
+            <FavoritesPage />
           </Route>
         </Switch>
       </Layout>
